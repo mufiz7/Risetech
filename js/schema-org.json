@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RiceTech",
+  "alternateName": "RiceTech IT Solutions",
+  "url": "https://www.ricetech.com",   
+  "logo": "https://www.ricetech.com/logo.png", 
+  "description": "Founded in 2010, RiceTech provides cloud migration, IT consulting, and 24/7 cybersecurity services. Trusted by hundreds of clients for secure, scalable tech solutions.",
+  "founder": {
+    "@type": "Person",
+    "name": "Your Founder Name" 
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/ricetech",     
+    "https://www.facebook.com/ricetech",
+    "https://twitter.com/ricetech"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-123-4567",  
+    "contactType": "customer support",
+    "areaServed": "Worldwide",
+    "availableLanguage": ["English"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 inda",
+    "addressLocality": "maharastra",
+    "addressRegion": "pune",
+    "postalCode": "000",
+    "addressCountry": "UAE"  
+  }
+}

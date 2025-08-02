@@ -1,0 +1,359 @@
+{
+  "Hardware": {
+    "Microsoft": [
+      {
+        "id": "MS-001",
+        "name": "Microsoft New Surface Pro (11Th Edition) ",
+        "image": "./assets/img/Product img/MS-001.jpg",
+        "description": "Windows 11 Home Copilot laptop",
+        "price": 115990
+      },
+      {
+        "id": "MS-002",
+        "name": "Microsoft New Surface Laptop",
+        "image": "./assets/img/Product img/MS-002.jpg",
+        "description": "7th Edition laptop",
+        "price": 150990
+      },
+      {
+        "id": "MS-003",
+        "name": "Microsoft Surface Laptop Studio 2",
+        "image": "./assets/img/Product img/MS-003.jpg",
+        "description": "Touchscreen - Intel Core i7 laptop",
+        "price": 119000
+      }
+    ],
+    "HP": [
+      {
+        "id": "HP-001",
+        "name": "HP EliteBook 840",
+        "image": "./assets/img/Product img/HP-001.avif",
+        "description": "Recommended for  2D and light 3D workflows, photography, and for running multiple large Microsoft Office files.Intel® Core™ Ultra 7 processor FreeDOS 35.6 cm (14) diagonal WUXGA display with Intel® Graphics 16 GB DDR5-5600 RAM 512 GB SSD Solid State Drive Fingerprint reader, Spill-resistant and backlit keyboard",
+        "price": 78000
+      },
+      {
+        "id": "HP-002",
+        "name": "HP ProBook 450",
+        "image": "./assets/img/Product img/HP-003.avif",
+        "description": "G10 Business Laptop PC The enterprise notebook that’s anything but ordinary Intel® Core™ Ultra 7 processor Windows 11 Pro 35.6 cm (14) diagonal WUXGA display with Intel® Arc™ Graphics 32 GB DDR5-5600 RAM 1 TB SSD Hard Drive Audio by Poly Studio, Spill resistant & backlit keyboard, Fingerprint reader",
+        "price": 25000
+      },
+      {
+        "id": "HP-003",
+        "name": "HP LaserJet Pro M404dn",
+        "image": "./assets/img/Product img/HP-002.avif",
+        "description": "Monochrome laser printer with duplex printing",
+        "price": 25000
+      },
+
+      {
+        "id": "HP-004",
+        "name": "HP DeskJet 2855e / 2755e ",
+        "image": "./assets/img/Product img/HP-004.jpg",
+        "description": "Wireless All-in-One Color Inkjet Printer,",
+        "price": 6299
+      }
+    ],
+    "Dell": [
+      {
+        "id": "DL-001",
+        "name": "Dell Inspiron 15",
+        "image": "./assets/img/Product img/DL-001.png",
+        "description": "15.6-inch laptop with AMD Ryzen 5",
+        "price": 62000
+      },
+      {
+        "id": "DL-002",
+        "name": "Dell OptiPlex 3080",
+        "image": "./assets/img/Product img/DL-002.jpg",
+        "description": "Small form factor desktop for business use",
+        "price": 54000
+      },
+      {
+        "id": "DL-003",
+        "name": "Dell Pro 24 All-in-One",
+        "image": "./assets/img/Product img/DL-003.jpg",
+        "description": "Small form factor desktop for business use",
+        "price": 54000
+      }
+    ],
+    "Lenovo": [
+      {
+        "id": "LN-001",
+        "name": "Lenovo ThinkPad E14",
+        "image": "./assets/img/Product img/LN-001.webp",
+        "description": "Business laptop with robust build",
+        "price": 70000
+      },
+      {
+        "id": "LN-002",
+        "name": "Lenovo IdeaCentre AIO 3",
+        "image": "./assets/img/Product img/LN-002.webp",
+        "description": "All-in-one desktop with 23.8-inch display",
+        "price": 58000
+      },
+      {
+        "id": "LN-003",
+        "name": "Lenovo ThinkPad E16 Gen 2",
+        "image": "./assets/img/Product img/LN-003.avif",
+        "description": "Offering significant performance improvements with up to AMD Ryzen 7000HS processors, the ThinkPad E16 Gen 2 (16″ AMD) laptop caters to multitasking and demanding workloads with ease. The two SODIMM memory slots and dual SSDs make it easy to upgrade components — crucial for running memory-intensive tasks and speed.",
+        "price": 58000
+      }
+    ],
+    "Huawei": [
+      {
+        "id": "HW-001",
+        "name": "Huawei MateBook D15",
+        "image": "./assets/img/Product img/HW-001.jpg",
+        "description": "Sleek laptop with 15.6-inch display",
+        "price": 65000
+      },
+      {
+        "id": "HW-002",
+        "name": "Huawei WiFi AX3",
+        "image": "./assets/img/Product img/HW-002.jpg",
+        "description": "Dual-core gigabit WiFi 6 router",
+        "price": 4500
+      },
+      {
+        "id": "HW-003",
+        "name": "Huawei MateBook X Pro",
+        "image": "./assets/img/Product img/HW-003.jpg",
+        "description": "Huawei MateBook X Pro laptop with 14.2-inch display",
+        "price": 4500
+      }
+    ],
+    "Epson": [
+      {
+        "id": "EP-001",
+        "name": "Epson L3250",
+        "image": "./assets/img/Product img/EP-001.webp",
+        "description": "EcoTank wireless color printer",
+        "price": 13500
+      },
+      {
+        "id": "EP-002",
+        "name": "Epson EB-E01",
+        "image": "./assets/img/Product img/EP-002.jpg",
+        "description": "SVGA projector for home and office",
+        "price": 32000
+      },
+      {
+        "id": "EP-003",
+        "name": "Epson Ecotank L6460",
+        "image": "./assets/img/Product img/EP-003.jpg",
+        "description": "Epson Ecotank L6460 A4 Wireless Color Home Inkjet Printers",
+        "price": 32000
+      }
+    ],
+    "WD": [
+      {
+        "id": "WD-001",
+        "name": "WD Blue 1TB HDD",
+        "image": "./assets/img/Product img/WD-001.jpg",
+        "description": "3.5-inch desktop hard disk drive",
+        "price": 3300
+      },
+      {
+        "id": "WD-002",
+        "name": "WD My Passport 2TB",
+        "image": "./assets/img/Product img/WD-002.jpg",
+        "description": "Portable external hard drive",
+        "price": 6800
+      },
+      {
+        "id": "WD-002",
+        "name": "WD My Passport 4TB",
+        "image": "./assets/img/Product img/WD-003.webp",
+        "description": "Portable external hard drive",
+        "price": 12800
+      }
+    ],
+    "Sandisk": [
+      {
+        "id": "SD-001",
+        "name": "SanDisk Ultra Dual Drive 64GB",
+        "image": "./assets/img/Product img/SD-001.jpg",
+        "description": "USB Type-C & Type-A flash drive",
+        "price": 850
+      },
+      {
+        "id": "SD-002",
+        "name": "SanDisk Extreme microSD 128GB",
+        "image": "./assets/img/Product img/SD-002.jpg",
+        "description": "High-speed microSD card for 4K video",
+        "price": 1800
+      },
+      {
+        "id": "SD-003",
+        "name": "SanDisk 1TB Extreme Portable SSD",
+        "image": "./assets/img/Product img/SD-003.jpg",
+        "description": "SanDisk 1TB Extreme Portable SSD 1050MB/s R, 1000MB/s W,Upto 2 Meter Drop Protection with IP55 Water/dust Resistance, HW Encryption, PC,MAC & TypeC Smartphone Compatible, 5Y Warranty, External SSD",
+        "price": 1800
+      }
+    ],
+    "Hikvision": [
+      {
+        "id": "HK-001",
+        "name": "Hikvision DS-2CE1AC0T",
+        "image": "./assets/img/Product img/HK-001.jpg",
+        "description": "2MP bullet HD camera",
+        "price": 1500
+      },
+      {
+        "id": "HK-002",
+        "name": "Hikvision DVR 4 Channel",
+        "image": "./assets/img/Product img/HK-002.jpg",
+        "description": "Digital video recorder for CCTV",
+        "price": 2900
+      },
+      {
+        "id": "HK-002",
+        "name": "HIKVISION 2Mp Indoor Wired Color Camera",
+        "image": "./assets/img/Product img/HK-003.jpg",
+        "description": "HIKVISION 2Mp Indoor Wired Color Camera",
+        "price": 2900
+      }
+    ],
+    "Seagate ": [
+      {
+        "id": "SG-001",
+        "name": "Seagate One Touch 1TB External SSD",
+        "image": "./assets/img/Product img/SG-001.webp",
+        "description": "Dropbox Plan (STKG1000400)",
+        "price": 8999
+      },
+      {
+        "id": "SG-002",
+        "name": "Seagate 1TB Portable External SSD",
+        "image": "./assets/img/Product img/SG-002.jpg",
+        "description": "Coptimize your drive for max performance",
+        "price": 14999
+      },
+      {
+        "id": "SG-003",
+        "name": "Seagate Expansion 1TB External HDD ",
+        "image": "./assets/img/Product img/SG-003.jpg",
+        "description": "Portable Hard Drive (STKM1000400)",
+        "price": 5649
+      }
+    ],
+    "Kingston ": [
+      {
+        "id": "KG-001",
+        "name": "Kingston FURY Beast DDR5 RGB 6000 MHz DDR5 RAM",
+        "image": "./assets/img/Product img/KG-001.jpg",
+        "description": "Infrared Sync Technology",
+        "price": 5099
+      },
+      {
+        "id": "KG-002",
+        "name": "Kingston KC600 1 TB SATA SSD",
+        "image": "./assets/img/Product img/KG-002.jpg",
+        "description": "Kingston KC600 SSD SKC600/1024G Internal SSD 2.5",
+        "price": 16147
+      },
+      {
+        "id": "KG-003",
+        "name": "Kingston DataTraveler Exodia USB‑A Flash Drive ",
+        "image": "./assets/img/Product img/KG-003.jpg",
+        "description": "Portable Hard Drive (STKM1000400)",
+        "price": 5649
+      }   
+    ],
+      "Canon ": [
+      {
+        "id": "CN-001",
+        "name": "Canon PIXMA TS9520a",
+        "image": "./assets/img/Product img/CN-001.jpg",
+        "description": "Wireless Home All-in-One Inkjet Printer",
+        "price": 48310
+      },
+      {
+        "id": "CN-002",
+        "name": "Canon PIXMA TS7720 ",
+        "image": "./assets/img/Product img/CN-002.jpg",
+        "description": "Wireless Home All-in-One Printer",
+        "price": 14925
+      },
+      {
+        "id": "CN-003",
+        "name": "Canon PIXMA MegaTank G3770  ",
+        "image": "./assets/img/Product img/KG-003.jpg",
+        "description": "BK All-in-one WiFi Inktank Colour Printer with 2 Years Standard Warranty",
+        "price": 16799
+      }   
+    ]
+  },
+  "Networking & Security": {
+    "Aruba": [
+      {
+        "id": "AR-001",
+        "name": "Aruba Instant On AP22",
+        "image": "./assets/img/Product img/AR-001.jpg",
+        "description": "WiFi 6 access point for SMBs",
+        "price": 10500
+      },
+      {
+        "id": "AR-002",
+        "name": "Aruba 2530 24G Switch",
+        "image": "./assets/img/Product img/AR-002.jpg",
+        "description": "24-port gigabit managed switch",
+        "price": 26500
+      },
+      {
+        "id": "AR-003",
+        "name": "Aruba Instant On 1830 8-Port Gb Smart Switch",
+        "image": "./assets/img/Product img/AR-003.jpg",
+        "description": "8-Port Gb Smart Switch fanless",
+        "price": 26500
+      }
+    ],
+    "Cisco": [
+      {
+        "id": "CS-001",
+        "name": "Cisco Catalyst 2960-X",
+        "image": "./assets/img/Product img/CS-001.jpg",
+        "description": "24-port managed switch",
+        "price": 72000
+      },
+      {
+        "id": "CS-002",
+        "name": "Cisco Meraki MX64",
+        "image": "./assets/img/Product img/CS-002.jpg",
+        "description": "Cloud-managed security appliance",
+        "price": 35000
+      },
+      {
+        "id": "CS-003",
+        "name": "Cisco Unified IP Phone 6961",
+        "image": "./assets/img/Product img/CS-003.webp",
+        "description": "Cisco Unified IP Phone 6961 - Anti-Glare LCD Display, Full-duplex speakerphone, 802.3af POE",
+        "price": 35000
+      }
+    ],
+    "Fortinet": [
+      {
+        "id": "FT-001",
+        "name": "FortiGate 40F",
+        "image": "./assets/img/Product img/FT-001.jpg",
+        "description": "Entry-level firewall with SD-WAN",
+        "price": 33000
+      },
+      {
+        "id": "FT-002",
+        "name": "FortiAP 231F",
+        "image": "./assets/img/Product img/FT-002.jpg",
+        "description": "Wi-Fi 6 indoor wireless access point",
+        "price": 24500
+      },
+      {
+        "id": "FT-003",
+        "name": "FortiGate-80F Hardware",
+        "image": "./assets/img/Product img/FT-003.webp",
+        "description": "FortiGate-80F Hardware Plus 1 Year 24x7 FortiCare and FortiGuard Unified Threat Protection (UTP)",
+        "price": 24500
+      }
+    ]
+  }
+}
