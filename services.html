@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Services - RiceTech IT Solutions</title>
+  <meta name="title" content="RiceTech - Leading IT Solutions & Cloud Migration Experts">
+  <meta name="description" content="RiceTech is a trusted IT partner delivering tailored cloud migrations, 24/7 security operations, and certified expertise across all major platforms.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="RiceTech">
+  <meta name="keywords" content="RiceTech, Cloud Migration, IT Consultancy, IT Solutions, Cybersecurity, Cloud Experts, Technology Services, Cloud Infrastructure">
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ricetechglobal.com/"> <!-- Replace -->
+  <meta property="og:title" content="RiceTech – Leading IT Solutions & Cloud Migration Experts">
+  <meta property="og:description" content="RiceTech excels in secure, scalable IT services and cloud transformations.">
+  <meta property="og:image" content="https://www.ricetech.com/assets/og-image.jpg"> <!-- Replace  -->
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.ricetechglobal.com/">
+  <meta name="twitter:title" content="RiceTech – Leading IT Solutions & Cloud Migration Experts">
+  <meta name="twitter:description" content="RiceTech excels in secure, scalable IT services and cloud transformations.">
+  <meta name="twitter:image" content="https://www.ricetech.com/assets/twitter-image.jpg"> <!-- Replace -->
+
+
+  <!-- Favicons -->
+  <link href="assets/img/xicon.png" rel="icon">
+  <link href="assets/img/xicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- JSON LD - Data -->
+  <script>
+  fetch('./assets/js/schema-org.json')
+    .then(response => response.json())
+    .then(data => {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(data);
+      document.head.appendChild(script);
+      console.log(script); // Remove later
+    });
+  </script>
+
+    <!-- AngularJS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">RiseTech</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="services.html" class="active"><span>Services</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="services.html">
+                <span>Cloud</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="cloud-migration.html">Cloud Migration</a></li>
+                  <li><a href="cloud-modernization.html">Cloud Modernization</a></li>
+                  <li><a href="cloud-migration.html">Cloud Application Development</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#">
+                <span>Security</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="identity-and-access-management.html">Identity and Access Management</a></li>
+                  <li><a href="cloud-security.html">Cloud Security</a></li>
+                  <li><a href="endpoint-security.html">EndPoint Security</a></li>
+                  <li><a href="security-management.html">Security Management</a></li>
+                  <li><a href="security-assessments.html">Security Assessments</a></li>
+                  <li><a href="information-protection.html">Information Protection</a></li>
+                  <li><a href="threat-protection.html">Threat Protection</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="products.html"><span>Products</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="products.html">
+                <span>HP</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HP-001.html">HP EliteBook 840</a></li>
+                  <li><a href="HP-002.html">HP ProBook 450</a></li>
+                  <li><a href="HP-003.html">HP LaserJet Pro M404dn</a></li>
+                  <li><a href="HP-004.html">HP DeskJet 2855e / 2755e</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>DELL</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="DL-001.html">Dell Inspiron 15</a></li>
+                  <li><a href="DL-002.html">Dell OptiPlex 3080</a></li>
+                  <li><a href="DL-003.html">Dell Pro 24 All-in-One</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Lenovo</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="LN-001.html">Lenovo ThinkPad E14</a></li>
+                  <li><a href="LN-002.html">Lenovo IdeaCentre AIO 3</a></li>
+                  <li><a href="LN-003.html">Lenovo ThinkPad E16 Gen 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Huawei</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HW-001.html">Huawei MateBook D15</a></li>
+                  <li><a href="HW-002.html">Huawei WiFi AX3</a></li>
+                  <li><a href="HW-003.html">Huawei MateBook X Pro</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Epson</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="EP-001.html">Epson L3250</a></li>
+                  <li><a href="EP-002.html">Epson EB-E01</a></li>
+                  <li><a href="EP-003.html">Epson Ecotank L6460</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>WD</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="WD-001.html">WD Blue 1TB HDD</a></li>
+                  <li><a href="WD-002.html">WD My Passport 2TB</a></li>
+                  <li><a href="WD-003.html">WD My Passport 4TB</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Sandisk</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="SD-001.html">Ultra Dual Drive 64GB</a></li>
+                  <li><a href="SD-002.html">Extreme microSD 128GB</a></li>
+                  <li><a href="SD-003.html">1TB Portable SSD</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Hikvision</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HK-001.html">Hikvision DS-2CE1AC0T</a></li>
+                  <li><a href="HK-002.html">Hikvision DVR 4 Channel</a></li>
+                  <li><a href="HK-003.html">HIKVISION 2Mp Indoor Cam</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Aruba</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="AR-001.html">Aruba Instant On AP22</a></li>
+                  <li><a href="AR-002.html">Aruba 2530 24G Switch</a></li>
+                  <li><a href="AR-003.html">Aruba 8-Port Gb Smart Switch</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Cisco</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="CS-001.html">Cisco Catalyst 2960-X</a></li>
+                  <li><a href="CS-002.html">Cisco Meraki MX64</a></li>
+                  <li><a href="CS-003.html">Cisco Unified IP Phone 6961</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Fortinet</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="FT-001.html">FortiGate 40F</a></li>
+                  <li><a href="FT-002.html">FortiAP 231F</a></li>
+                  <li><a href="FT-003.html">FortiGate-80F Hardware</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Microsoft</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="MS-001.html">Surface Pro (11Th Edition)</a></li>
+                  <li><a href="MS-002.html">Surface Laptop</a></li>
+                  <li><a href="MS-003.html">Surface Laptop Studio 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Seagate</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="SG-001.html">One Touch 1TB External SSD</a></li>
+                  <li><a href="SG-002.html">1TB Portable External SSD</a></li>
+                  <li><a href="SG-003.html">Expansion 1TB External HDD</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Kingston</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="KG-001.html">FURY Beast DDR5 RGB 6000M...</a></li>
+                  <li><a href="KG-002.html">KC600 1 TB SATA SSD</a></li>
+                  <li><a href="KG-003.html">DataTraveler Exodia USB‑A...</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Canon</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="CN-001.html">PIXMA TS9520a</a></li>
+                  <li><a href="CN-002.html">PIXMA TS7720</a></li>
+                  <li><a href="CN-003.html">PIXMA MegaTank G3770</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title accent-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Services</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current" >Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <div class="container">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up" data-aos-delay="000">
+          <h3>Cloud Solutions</h3>
+        </div><!-- End Section Title -->
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bi bi-clouds"></i>
+              </div>
+               <a href="cloud-migration.html" class="stretched-link">
+                <h3>Cloud Migration</h3>
+              </a>
+              <p>Cloud migration has now become a top priority for organizations that are aiming to take their business operations online, ensuring greater flexibility...</p>
+              <a href="cloud-migration.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bi bi-cloud-arrow-up"></i>
+              </div>
+              <a href="cloud-modernization.html" class="stretched-link">
+                <h3>Cloud Modernization</h3>
+              </a>
+              <p>Cloud Modernization is the process of transforming legacy systems by updating their architecture, features...</p>
+              <a href="cloud-modernization.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="cloud-app-dev.html" class="stretched-link">
+                <h3>Cloud Application Development</h3>
+              </a>
+              <p>Cloud Application Development represents the modern paradigm for creating software solutions designed to operate in cloud environments from inception...</p>
+              <a href="cloud-app-dev.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+          
+
+        </div>
+
+      </div>
+
+      <div class="container" style="margin-top: 100px;">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up" data-aos-delay="000">
+          <h3>Security Solutions</h3>
+        </div><!-- End Section Title -->
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bi bi-key"></i>
+              </div>
+               <a href="identity-and-access-management.html" class="stretched-link">
+                <h3>Identity and Access Management</h3>
+              </a>
+              <p>In today's digital world, identity theft costs businesses millions annually. RiseTech combats this with Azure AD solutions, providing robust...</p>
+              <a href="identity-and-access-management.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <a href="cloud-security.html" class="stretched-link">
+                <h3>Cloud Security</h3>
+              </a>
+              <p>Cloud computing revolutionized workplaces with agility and scalability—but also increased security risks. RiseTech's experts provide...</p>
+              <a href="cloud-security.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bi bi-device-hdd"></i>
+              </div>
+              <a href="endpoint-security.html" class="stretched-link">
+                <h3>EndPoint Security</h3>
+              </a>
+              <p>Digital workflows demand advanced security. Traditional firewalls alone can't stop modern threats. RiseTech's Endpoint Security...</p>
+              <a href="endpoint-security.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <a href="security-management.html" class="stretched-link">
+                <h3>Security Management</h3>
+              </a>
+              <p>Security management challenges organizations with fragmented tools and limited visibility...</p>
+              <a href="security-management.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bi bi-clipboard2-check"></i>
+              </div>
+              <a href="security-assessments.html" class="stretched-link">
+                <h3>Security Assessments</h3>
+              </a>
+              <p>In today's fast-moving business world, security assessments are critical yet often neglected. RiseTech's experts thoroughly...</p>
+              <a href="security-assessments.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bi bi-file-lock"></i>
+              </div>
+              <a href="information-protection.html" class="stretched-link">
+                <h3>information-protection</h3>
+              </a>
+              <p>In today's digital workplace, protecting sensitive data is critical. Delphi's comprehensive approach safeguards information...</p>
+              <a href="information-protection.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-yellow position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bi bi-bug"></i>
+              </div>
+              <a href="threat-protection.html" class="stretched-link">
+                <h3>Threat Protection</h3>
+              </a>
+              <p>Modern businesses face relentless cyber threats. Delphi boosts enterprise resilience with automated threat detection...</p>
+              <a href="threat-protection.html">Learn more...</a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+
+  <div ng-include="'footer.html'"></div>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <h1 class="bounce-text">
+      <span>R</span><span>i</span><span>s</span><span>e</span><span>T</span><span>e</span><span>c</span><span>h</span>
+    </h1>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

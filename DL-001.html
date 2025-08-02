@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Product Details</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/xicon.png" rel="icon">
+  <link href="assets/img/xicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- AngularJS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+ 
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">RiseTech</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="services.html"><span>Services</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="services.html">
+                <span>Cloud</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="cloud-migration.html">Cloud Migration</a></li>
+                  <li><a href="cloud-modernization.html">Cloud Modernization</a></li>
+                  <li><a href="cloud-migration.html">Cloud Application Development</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#">
+                <span>Security</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="identity-and-access-management.html">Identity and Access Management</a></li>
+                  <li><a href="cloud-security.html">Cloud Security</a></li>
+                  <li><a href="endpoint-security.html">EndPoint Security</a></li>
+                  <li><a href="security-management.html">Security Management</a></li>
+                  <li><a href="security-assessments.html">Security Assessments</a></li>
+                  <li><a href="information-protection.html">Information Protection</a></li>
+                  <li><a href="threat-protection.html">Threat Protection</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="products.html" class="active"><span>Products</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="products.html">
+                <span>HP</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HP-001.html">HP EliteBook 840</a></li>
+                  <li><a href="HP-002.html">HP ProBook 450</a></li>
+                  <li><a href="HP-003.html">HP LaserJet Pro M404dn</a></li>
+                  <li><a href="HP-004.html">HP DeskJet 2855e / 2755e</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>DELL</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="DL-001.html">Dell Inspiron 15</a></li>
+                  <li><a href="DL-002.html">Dell OptiPlex 3080</a></li>
+                  <li><a href="DL-003.html">Dell Pro 24 All-in-One</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Lenovo</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="LN-001.html">Lenovo ThinkPad E14</a></li>
+                  <li><a href="LN-002.html">Lenovo IdeaCentre AIO 3</a></li>
+                  <li><a href="LN-003.html">Lenovo ThinkPad E16 Gen 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Huawei</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HW-001.html">Huawei MateBook D15</a></li>
+                  <li><a href="HW-002.html">Huawei WiFi AX3</a></li>
+                  <li><a href="HW-003.html">Huawei MateBook X Pro</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Epson</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="EP-001.html">Epson L3250</a></li>
+                  <li><a href="EP-002.html">Epson EB-E01</a></li>
+                  <li><a href="EP-003.html">Epson Ecotank L6460</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>WD</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="WD-001.html">WD Blue 1TB HDD</a></li>
+                  <li><a href="WD-002.html">WD My Passport 2TB</a></li>
+                  <li><a href="WD-003.html">WD My Passport 4TB</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Sandisk</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="SD-001.html">Ultra Dual Drive 64GB</a></li>
+                  <li><a href="SD-002.html">Extreme microSD 128GB</a></li>
+                  <li><a href="SD-003.html">1TB Portable SSD</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Hikvision</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HK-001.html">Hikvision DS-2CE1AC0T</a></li>
+                  <li><a href="HK-002.html">Hikvision DVR 4 Channel</a></li>
+                  <li><a href="HK-003.html">HIKVISION 2Mp Indoor Cam</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Aruba</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="AR-001.html">Aruba Instant On AP22</a></li>
+                  <li><a href="AR-002.html">Aruba 2530 24G Switch</a></li>
+                  <li><a href="AR-003.html">Aruba 8-Port Gb Smart Switch</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Cisco</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="CS-001.html">Cisco Catalyst 2960-X</a></li>
+                  <li><a href="CS-002.html">Cisco Meraki MX64</a></li>
+                  <li><a href="CS-003.html">Cisco Unified IP Phone 6961</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Fortinet</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="FT-001.html">FortiGate 40F</a></li>
+                  <li><a href="FT-002.html">FortiAP 231F</a></li>
+                  <li><a href="FT-003.html">FortiGate-80F Hardware</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Microsoft</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="MS-001.html">Surface Pro (11Th Edition)</a></li>
+                  <li><a href="MS-002.html">Surface Laptop</a></li>
+                  <li><a href="MS-003.html">Surface Laptop Studio 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Seagate</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="SG-001.html">One Touch 1TB External SSD</a></li>
+                  <li><a href="SG-002.html">1TB Portable External SSD</a></li>
+                  <li><a href="SG-003.html">Expansion 1TB External HDD</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Kingston</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="KG-001.html">FURY Beast DDR5 RGB 6000M...</a></li>
+                  <li><a href="KG-002.html">KC600 1 TB SATA SSD</a></li>
+                  <li><a href="KG-003.html">DataTraveler Exodia USB‑A...</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Canon</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="CN-001.html">PIXMA TS9520a</a></li>
+                  <li><a href="CN-002.html">PIXMA TS7720</a></li>
+                  <li><a href="CN-003.html">PIXMA MegaTank G3770</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title accent-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Product Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Product Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="assets/img/Product img/DL-001.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Product img/DL-001.3.avif" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Product img/DL-001.2.avif" alt="">
+            </div>
+
+            
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Dell Inspiron 15</h2>
+              <p>
+                The <b>Dell Inspiron 15</b> is a popular line of 15.6-inch laptops designed for everyday use. It offers a variety of configurations with either Intel or AMD processors and a range of memory and storage options. These laptops are generally considered a mid-range option, balancing affordability with decent performance for tasks like web browsing, document creation, entertainment, and light gaming. 
+              </p>
+              <p>Dell’s Inspiron line is built for general consumers and students. The “15” refers to its 15.6″ screen size. The 3500/3520/3530/3535 codes indicate internal generation and specs changes over time .</p>
+              
+              <div class="second-image">
+                <img src="./assets/img/Product img/DL-001.png" alt="">
+              </div>
+
+              <p>
+                The Inspiron 15 series is Dell's general-purpose laptop offering, designed for everyday use at a reasonable price.
+
+              </p>
+
+              <p>
+                <h2>
+                 Key Features
+                </h2>
+             <ul class="dot-list">
+                <li>Display: 15.6" Full HD (1920x1080) anti-glare, some with 120Hz refresh.</li>
+                <li>Performance: Up to Intel 13th Gen i7 or AMD Ryzen 7 7730U.</li>
+                <li>Graphics: Intel UHD/Iris Xe or AMD Radeon 610M (integrated).</li>
+                <li>Memory & Storage: 8GB/16GB DDR4 RAM, 512GB SSD (some with 1TB HDD).</li>
+                <li>OS: Windows 11 Home, often with MS Office Home & Student.</li>
+                <li>Ports: USB-A, USB-C, HDMI, SD card slot, headset jack.</li>
+                <li>Extras: Wi-Fi 6, Bluetooth, webcam, stereo speakers, optional backlit keyboard & fingerprint reader.</li>
+             </ul>
+
+              </p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Product information</h3>
+              <ul>
+                <li><strong>Category</strong>Laptop</li>
+                <li><strong>Brand</strong>DL</li>
+              </ul>
+            </div>
+            <div class="col-lg-100 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <form action="https://api.web3forms.com/submit" method="post" class="align-items-center">
+                <input type="hidden" name="access_key" value="_________">
+                <input type="hidden" name="redirect" value="_______">
+                <input type="hidden" name="subject" value="__________ Product request">
+
+                <p class="text-center" style="font-size: 18px;">Get in touch for more info</p>
+                
+                <input type="text" placeholder="Name" class="form-control mb-3">
+                <input type="text" placeholder="Email" class="form-control mb-3">
+                <input type="tel" placeholder="Phone" class="form-control mb-3">
+                <button type="submit" class="btn btn-primary ">Get a Quote</button>
+                
+              </form>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+
+
+  <!-- Footer -->
+  <div ng-include="'footer.html'"></div>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <h1 class="bounce-text">
+      <span>R</span><span>i</span><span>s</span><span>e</span><span>T</span><span>e</span><span>c</span><span>h</span>
+    </h1>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

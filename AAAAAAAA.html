@@ -1,0 +1,268 @@
+<!-- <div class="slider-container" id="slider">
+  <div class="slider-track" id="sliderTrack">
+
+    <div class="cert-card"><img src="./assets/img/clients/microsoft.png" alt="Microsoft" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/hp.png" alt="HP" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/dell.png" alt="Dell" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/lenovo.png" alt="Lenovo" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/huawei.png" alt="Huawei" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/eipson.png" alt="Epson" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/canon.png" alt="Canon" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/wd.png" alt="WD" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/sandisk.png" alt="SanDisk" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/seagate.png" alt="Seagate" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/kingston.png" alt="Kingston" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/hikvision.png" alt="Hikvision" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/aruba.png" alt="Aruba" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/cisco.png" alt="Cisco" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/fortinet.png" alt="Fortinet" draggable="false" /></div>
+
+    <div class="cert-card"><img src="./assets/img/clients/microsoft.png" alt="Microsoft" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/hp.png" alt="HP" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/dell.png" alt="Dell" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/lenovo.png" alt="Lenovo" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/huawei.png" alt="Huawei" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/eipson.png" alt="Epson" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/canon.png" alt="Canon" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/wd.png" alt="WD" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/sandisk.png" alt="SanDisk" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/seagate.png" alt="Seagate" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/kingston.png" alt="Kingston" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/hikvision.png" alt="Hikvision" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/aruba.png" alt="Aruba" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/cisco.png" alt="Cisco" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/fortinet.png" alt="Fortinet" draggable="false" /></div>
+
+    </div>
+</div>
+
+<style>
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .slider-track {
+    display: flex;
+    gap: 30px;
+    animation: scroll 40s linear infinite; /* 🔁 Adjust scroll speed here */
+    will-change: transform;
+    cursor: grab;
+  }
+
+  .slider-container:hover .slider-track {
+    animation-play-state: paused; /* ⏸️ Pause on hover */
+  }
+
+  .cert-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+
+  .cert-card img {
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none; /* disables mouse interaction like selection */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-250%);
+    }
+  }
+</style>
+
+<script>
+  const slider = document.getElementById('slider');
+  const track = document.getElementById('sliderTrack');
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  let paused = false;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    track.style.cursor = 'grabbing';
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    track.style.animationPlayState = 'paused';
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    track.style.cursor = 'grab';
+    paused = false;
+    track.style.animationPlayState = 'running';
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    track.style.cursor = 'grab';
+    if (!paused) {
+      track.style.animationPlayState = 'running';
+    }
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    slider.scrollLeft = scrollLeft - walk;
+  });
+</script> -->
+
+
+
+<!-- <div class="slider-section">
+  <div class="slider-row">
+    
+    <div class="cert-card"><img src="./assets/img/clients/microsoft.png" alt="Microsoft" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/hp.png" alt="HP" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/dell.png" alt="Dell" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/lenovo.png" alt="Lenovo" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/huawei.png" alt="Huawei" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/eipson.png" alt="Epson" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/canon.png" alt="Canon" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/wd.png" alt="WD" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/sandisk.png" alt="SanDisk" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/seagate.png" alt="Seagate" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/kingston.png" alt="Kingston" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/hikvision.png" alt="Hikvision" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/aruba.png" alt="Aruba" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/cisco.png" alt="Cisco" draggable="false" /></div>
+    <div class="cert-card"><img src="./assets/img/clients/fortinet.png" alt="Fortinet" draggable="false" /></div>
+  </div>
+</div>
+
+
+<style>
+
+.slider-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 20;
+    margin-bottom: 70px;
+}
+
+.slider-section .slider-row {
+    display: flex;
+    flex-wrap: nowrap; /* Important: Prevent wrapping */
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider-section .slider-row::-webkit-scrollbar {
+    height: 10px;
+    padding: 0 15px;
+}
+
+.slider-section .slider-row::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.slider-section .slider-row::-webkit-scrollbar-thumb {
+    background: #0866e2;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.slider-section .slider-row::-webkit-scrollbar-thumb:hover {
+    background: rgb(11, 51, 160);
+}
+
+
+.slider-row {
+  opacity: 1 !important; /* Force visibility */
+  will-change: transform; /* Optimize for animation */
+}
+
+.slider-section {
+  overflow: hidden; /* Hide scrollbars during animation */
+}
+
+
+.cert-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.cert-card img {
+  width: 160px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none; /* disables mouse interaction like selection */
+}
+
+</style> -->
+
+
+
+<marquee 
+  behavior="scroll" 
+  direction="left" 
+  scrollamount="3" 
+  onmouseover="this.stop()" 
+  onmouseout="this.start()"
+>
+  <div class="cert-card"><img src="./assets/img/clients/microsoft.png" alt="Microsoft" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/hp.png" alt="HP" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/dell.png" alt="Dell" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/lenovo.png" alt="Lenovo" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/huawei.png" alt="Huawei" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/eipson.png" alt="Epson" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/canon.png" alt="Canon" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/wd.png" alt="WD" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/sandisk.png" alt="SanDisk" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/seagate.png" alt="Seagate" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/kingston.png" alt="Kingston" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/hikvision.png" alt="Hikvision" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/aruba.png" alt="Aruba" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/cisco.png" alt="Cisco" /></div>
+  <div class="cert-card"><img src="./assets/img/clients/fortinet.png" alt="Fortinet" /></div>
+</marquee>
+
+
+<style>
+  .cert-card {
+    display: inline-flex;
+    width: 250px;
+    height: 150px;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cert-card img {
+    width: 160px;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+  }
+</style>

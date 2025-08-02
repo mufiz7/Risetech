@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - Company Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/xicon.png" rel="icon">
+  <link href="assets/img/xicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- AngularJS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+ 
+</head>
+
+<body class="contact-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">RiseTech</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="services.html"><span>Services</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="services.html">
+                <span>Cloud</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="cloud-migration.html">Cloud Migration</a></li>
+                  <li><a href="cloud-modernization.html">Cloud Modernization</a></li>
+                  <li><a href="cloud-migration.html">Cloud Application Development</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#">
+                <span>Security</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="identity-and-access-management.html">Identity and Access Management</a></li>
+                  <li><a href="cloud-security.html">Cloud Security</a></li>
+                  <li><a href="endpoint-security.html">EndPoint Security</a></li>
+                  <li><a href="security-management.html">Security Management</a></li>
+                  <li><a href="security-assessments.html">Security Assessments</a></li>
+                  <li><a href="information-protection.html">Information Protection</a></li>
+                  <li><a href="threat-protection.html">Threat Protection</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="products.html"><span>Products</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="products.html">
+                <span>HP</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HP-001.html">HP EliteBook 840</a></li>
+                  <li><a href="HP-002.html">HP ProBook 450</a></li>
+                  <li><a href="HP-003.html">HP LaserJet Pro M404dn</a></li>
+                  <li><a href="HP-004.html">HP DeskJet 2855e / 2755e</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>DELL</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="DL-001.html">Dell Inspiron 15</a></li>
+                  <li><a href="DL-002.html">Dell OptiPlex 3080</a></li>
+                  <li><a href="DL-003.html">Dell Pro 24 All-in-One</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Lenovo</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="LN-001.html">Lenovo ThinkPad E14</a></li>
+                  <li><a href="LN-002.html">Lenovo IdeaCentre AIO 3</a></li>
+                  <li><a href="LN-003.html">Lenovo ThinkPad E16 Gen 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Huawei</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HW-001.html">Huawei MateBook D15</a></li>
+                  <li><a href="HW-002.html">Huawei WiFi AX3</a></li>
+                  <li><a href="HW-003.html">Huawei MateBook X Pro</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Epson</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="EP-001.html">Epson L3250</a></li>
+                  <li><a href="EP-002.html">Epson EB-E01</a></li>
+                  <li><a href="EP-003.html">Epson Ecotank L6460</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>WD</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="WD-001.html">WD Blue 1TB HDD</a></li>
+                  <li><a href="WD-002.html">WD My Passport 2TB</a></li>
+                  <li><a href="WD-003.html">WD My Passport 4TB</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Sandisk</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="SD-001.html">Ultra Dual Drive 64GB</a></li>
+                  <li><a href="SD-002.html">Extreme microSD 128GB</a></li>
+                  <li><a href="SD-003.html">1TB Portable SSD</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Hikvision</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="HK-001.html">Hikvision DS-2CE1AC0T</a></li>
+                  <li><a href="HK-002.html">Hikvision DVR 4 Channel</a></li>
+                  <li><a href="HK-003.html">HIKVISION 2Mp Indoor Cam</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Aruba</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="AR-001.html">Aruba Instant On AP22</a></li>
+                  <li><a href="AR-002.html">Aruba 2530 24G Switch</a></li>
+                  <li><a href="AR-003.html">Aruba 8-Port Gb Smart Switch</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Cisco</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="CS-001.html">Cisco Catalyst 2960-X</a></li>
+                  <li><a href="CS-002.html">Cisco Meraki MX64</a></li>
+                  <li><a href="CS-003.html">Cisco Unified IP Phone 6961</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Fortinet</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="FT-001.html">FortiGate 40F</a></li>
+                  <li><a href="FT-002.html">FortiAP 231F</a></li>
+                  <li><a href="FT-003.html">FortiGate-80F Hardware</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Microsoft</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="MS-001.html">Surface Pro (11Th Edition)</a></li>
+                  <li><a href="MS-002.html">Surface Laptop</a></li>
+                  <li><a href="MS-003.html">Surface Laptop Studio 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Seagate</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="SG-001.html">One Touch 1TB External SSD</a></li>
+                  <li><a href="SG-002.html">1TB Portable External SSD</a></li>
+                  <li><a href="SG-003.html">Expansion 1TB External HDD</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Kingston</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="KG-001.html">FURY Beast DDR5 RGB 6000M...</a></li>
+                  <li><a href="KG-002.html">KC600 1 TB SATA SSD</a></li>
+                  <li><a href="KG-003.html">DataTraveler Exodia USB‑A...</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="products.html">
+                <span>Canon</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="CN-001.html">PIXMA TS9520a</a></li>
+                  <li><a href="CN-002.html">PIXMA TS7720</a></li>
+                  <li><a href="CN-003.html">PIXMA MegaTank G3770</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+           <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title accent-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Contact</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Contact</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="mb-5">
+        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786541102833!2d55.271801475163464!3d25.197196977710924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sin!4v1748031947543!5m2!1sen!2sin" frameborder="0" allowfullscreen=""></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade">
+
+        <div class="row gy-5 gx-lg-5">
+
+          <div class="col-lg-4">
+
+            <div class="info">
+              <h3>Get in touch</h3>
+              <p>Contact us by filling the form or using our contact details below</p>
+
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>Burj Khalifa, dubai , UAE</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>sales@risetechglobal.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <p>+91 77570 60229</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="https://api.web3forms.com/submit" method="post" class="php-email-form">
+              <input type="hidden" name="access_key" value="66b058d6-2a27-41db-bd33-c2e12aee64dc">
+              <input type="hidden" name="redirect" value="https://woxflow.in/success.html">
+              <input type="hidden" name="subject" value="Website Contact Form Submission">
+              <input type="hidden" name="title" value="Website Contact Form">
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="number" class="form-control" name="phone" id="phone" placeholder="Your Phone number" required="">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <div ng-include="'footer.html'"></div>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <h1 class="bounce-text">
+      <span>R</span><span>i</span><span>s</span><span>e</span><span>T</span><span>e</span><span>c</span><span>h</span>
+    </h1>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
